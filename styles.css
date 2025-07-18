@@ -10,3 +10,8 @@
   width: calc(20px * 16 + 1px * 15); 
   gap: 1px;
 }
+
+.restart {
+  margin-top: 10px;
+  
+}
