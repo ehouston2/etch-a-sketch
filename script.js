@@ -7,7 +7,10 @@ for(let i = 0; i < 16; i++) {
     newDiv.classList.add("squares");
     container.appendChild(newDiv);
     newDiv.addEventListener("mouseover", (event) => {
-    newDiv.style.backgroundColor = 'black';
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    newDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     });
   }
 };
@@ -39,8 +42,10 @@ button.addEventListener("click", (event) => {
         newDiv.classList.add("squares");
         container.appendChild(newDiv);
         newDiv.addEventListener("mouseover", (event) => {
-        newDiv.style.backgroundColor = 'black';
-        
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        newDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         })
       }
     }
